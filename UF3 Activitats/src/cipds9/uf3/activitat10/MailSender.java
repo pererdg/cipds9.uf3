@@ -43,6 +43,7 @@ public class MailSender {
 		write("From: " + mail.getFrom());
 		write("To: " + mail.getTo());
 		write("Subject: " + mail.getSubject());
+		write("Content-Type: text/plain;charset=utf-8");
 		write("");
 		// Body
 		write(mail.getBody());
